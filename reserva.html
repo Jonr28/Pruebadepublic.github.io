@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca - Mesa 4</title>
+    <link rel="icon" href="logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-libreria">Biblioteca CA</h1>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="libros.html">Libros</a>
+                    <a href="#">Reserva</a>
+                    <a href="Login.html">Cerrar sesion</a>
+                </nav>
+            </div>
+        </header>
+    <main>
+        <section id="contacto">
+            <div class="contenedor">
+                <h3>Reserva</h3>
+                <p>Este es el apartado para realizar una reserva de un libro</p>
+                <div class="formulario">
+                    <form action="procesar_reserva.php" method="POST">
+                        <label for="nombre">Nombre del Alumno</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="carne">Carné del Alumno</label>
+                        <input type="text" id="carne" name="carne" required>
+                        <label for="libro">Libro que desea reservar</label>
+                        <textarea id="libro" name="libro" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

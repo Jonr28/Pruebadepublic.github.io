@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Biblioteca | mesa4</title>
+        <link rel="stylesheet" href="css/log.css">
+        <script>
+           function validarFormulario() {
+    // Obtener los valores de los campos de entrada en el formulario
+    var username = document.forms["loginForm"]["username"].value;
+    var password = document.forms["loginForm"]["password"].value;
+
+    // Comprobar si los campos de usuario y contraseña están vacíos
+    if (username === "" || password === "") {
+        // Si uno o ambos campos están vacíos, mostrar una alerta
+        alert("Por favor, complete ambos campos antes de continuar.");
+        return false; // Devolver false para evitar que el formulario se envíe
+    }
+}
+        </script>
+    </head>
+    <body> 
+
+        <div class="login-box">
+            <!-- Mostrar el logo de la biblioteca -->
+            <img class="avatar" src="img/logo.PNG" alt="Logo de la biblioteca">
+            <h1>Iniciar Sesion </h1>
+            <!-- Formulario de inicio de sesión -->
+          
+                <!-- Campo de entrada para el nombre de usuario -->
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" placeholder="Enter Usuario" name="username">
+        
+                <!-- Campo de entrada para la contraseña -->
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" name="password">
+        
+                <!-- Botón de enviar para iniciar sesión -->
+                <input type="submit" value="Iniciar Sesion">
+            </form>
+        </div>
+        
+
+
+            </form>
+        </div>
+    </body>
+</html>
